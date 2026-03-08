@@ -21,7 +21,7 @@ const Index = () => {
         <div className="relative z-10 container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
             <p className="text-primary text-xs font-body font-semibold uppercase tracking-[0.4em] mb-8">
-              Panama City Beach & Walton County, FL
+              Panama City Beach · 30A · Alys Beach · Panama City & Beyond
             </p>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-display leading-[1.1] mb-8">
               <span className="gold-gradient-text-animated">Kamolon</span>
