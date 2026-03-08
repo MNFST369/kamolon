@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: "What areas do you serve?",
-    a: "We primarily serve Northwest Florida Beaches International Airport (ECP) and the greater Panama City Beach area, including hotels, resorts, and private residences throughout Bay County."
+    a: "We primarily serve Northwest Florida Beaches International Airport (ECP) and the greater Panama City Beach area, including hotels, resorts, and private residences throughout Bay County and Walton County."
   },
   {
     q: "Can I book for a group or family?",
