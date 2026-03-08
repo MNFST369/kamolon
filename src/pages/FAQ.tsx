@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: "What areas do you serve?",
-    a: "We primarily serve Northwest Florida Beaches International Airport (ECP) and the greater Panama City Beach area, including hotels, resorts, and private residences throughout Bay County and Walton County."
+    a: "We cover an 80-mile radius around ECP Airport—including Panama City Beach, 30A, Alys Beach, Rosemary Beach, Seaside, Destin, Panama City, and surrounding communities in Bay County, Walton County, and beyond."
   },
   {
     q: "Can I book for a group or family?",

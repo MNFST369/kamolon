@@ -218,12 +218,13 @@ const Services = () => {
         <div className="container mx-auto px-4 md:px-8">
           <div className="fade-in-up text-center mb-10">
             <p className="text-primary text-sm font-semibold uppercase tracking-[0.2em] mb-3">Service Area</p>
-            <h2 className="text-3xl font-bold">Our Coverage</h2>
+            <h2 className="text-3xl font-bold">80-Mile Radius Coverage</h2>
+            <p className="text-muted-foreground text-sm mt-2">Panama City Beach · 30A · Alys Beach · Rosemary Beach · Seaside · Destin · Panama City & more</p>
           </div>
           <div className="fade-in-up max-w-4xl mx-auto rounded-lg overflow-hidden border border-border">
             <iframe
-              title="Kamolon Service Area - Panama City Beach"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109619.93942474256!2d-85.93!3d30.19!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8893e1f2ea3fded1%3A0xb30f85d3ceebf14f!2sPanama%20City%20Beach%2C%20FL!5e0!3m2!1sen!2sus!4v1"
+              title="Kamolon Service Area - 80 Mile Radius around ECP Airport"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d440000!2d-85.795!3d30.357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889379e58302a7d1%3A0x5e44a3d9d4e7b0e!2sNorthwest%20Florida%20Beaches%20International%20Airport!5e0!3m2!1sen!2sus!4v1"
               width="100%"
               height="400"
               style={{ border: 0 }}

@@ -19,7 +19,7 @@ const Footer = () => {
               <span className="gold-gradient-text-animated">KAMOLON</span>
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed font-body">
-              Premium shuttle services in Panama City Beach & Walton County, FL. Where luxury meets reliability.
+              Premium shuttle services within 80 miles of ECP Airport—Panama City Beach, 30A, Alys Beach, Destin & beyond. Where luxury meets reliability.
             </p>
           </div>
           <div>
