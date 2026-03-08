@@ -23,7 +23,7 @@ const Services = () => {
     pickup: "",
     dropoff: "",
     passengers: "1",
-    vehicle: "sedan",
+    vehicle: "suv",
     date: "",
     time: "",
     name: "",

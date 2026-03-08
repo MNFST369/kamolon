@@ -18,8 +18,8 @@ const Footer = () => {
             <h3 className="text-2xl font-display font-bold tracking-[0.15em] mb-4">
               <span className="gold-gradient-text-animated">KAMOLON</span>
             </h3>
-            <p className="text-muted-foreground text-sm leading-relaxed">
-              Premium shuttle services in Panama City Beach, FL. Where luxury meets reliability.
+            <p className="text-muted-foreground text-sm leading-relaxed font-body">
+              Premium shuttle services in Panama City Beach & Walton County, FL. Where luxury meets reliability.
             </p>
           </div>
           <div>

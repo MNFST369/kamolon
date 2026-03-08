@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: "Can I book for a group or family?",
-    a: "Absolutely. We offer both premium sedans and spacious SUVs to accommodate families and groups of up to 10 passengers. Child seats are available upon request."
+    a: "Absolutely. We offer spacious SUVs and premium minivans to accommodate families and groups of up to 10 passengers. Child seats are available upon request."
   },
   {
     q: "How far in advance should I book?",
