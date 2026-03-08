@@ -18,11 +18,11 @@ const faqs = [
   },
   {
     q: "What areas do you serve?",
-    a: "We primarily serve Northwest Florida Beaches International Airport (ECP) and the greater Panama City Beach area, including hotels, resorts, and private residences throughout Bay County."
+    a: "We primarily serve Northwest Florida Beaches International Airport (ECP) and the greater Panama City Beach area, including hotels, resorts, and private residences throughout Bay County and Walton County."
   },
   {
     q: "Can I book for a group or family?",
-    a: "Absolutely. We offer both premium sedans and spacious SUVs to accommodate families and groups of up to 10 passengers. Child seats are available upon request."
+    a: "Absolutely. We offer spacious SUVs and premium minivans to accommodate families and groups of up to 10 passengers. Child seats are available upon request."
   },
   {
     q: "How far in advance should I book?",
