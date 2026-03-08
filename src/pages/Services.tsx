@@ -134,8 +134,8 @@ const Services = () => {
                 <div>
                   <label className={labelClass}>Vehicle Type</label>
                   <select name="vehicle" value={form.vehicle} onChange={handleChange} className={inputClass}>
-                    <option value="sedan">Sedan</option>
                     <option value="suv">SUV</option>
+                    <option value="minivan">Minivan</option>
                   </select>
                 </div>
                 <div>
