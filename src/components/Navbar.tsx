@@ -32,8 +32,8 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between h-20">
-          <Link to="/" className="text-2xl font-bold tracking-wider">
-            <span className="gold-gradient-text">KAMOLON</span>
+          <Link to="/" className="text-2xl font-display font-bold tracking-[0.15em]">
+            <span className="gold-gradient-text-animated">KAMOLON</span>
           </Link>
 
           {/* Desktop nav */}
