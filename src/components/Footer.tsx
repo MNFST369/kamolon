@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -13,7 +14,6 @@ const Footer = () => {
     <footer className="border-t border-border bg-card">
       <div className="container mx-auto px-4 md:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-          {/* Brand */}
           <div className="md:col-span-1">
             <h3 className="text-2xl font-bold tracking-wider mb-4">
               <span className="gold-gradient-text">KAMOLON</span>
@@ -22,8 +22,6 @@ const Footer = () => {
               Premium shuttle services in Panama City Beach, FL. Where luxury meets reliability.
             </p>
           </div>
-
-          {/* Quick Links */}
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider text-primary mb-4">Quick Links</h4>
             <div className="flex flex-col gap-3">
@@ -33,8 +31,6 @@ const Footer = () => {
               <Link to="/faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">FAQ</Link>
             </div>
           </div>
-
-          {/* Legal */}
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider text-primary mb-4">Legal</h4>
             <div className="flex flex-col gap-3">
@@ -42,8 +38,6 @@ const Footer = () => {
               <Link to="/terms" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Terms of Service</Link>
             </div>
           </div>
-
-          {/* Newsletter */}
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider text-primary mb-4">Stay Updated</h4>
             <form onSubmit={handleSubscribe} className="flex flex-col gap-3">
@@ -55,17 +49,12 @@ const Footer = () => {
                 required
                 className="bg-muted border border-border rounded-sm px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary"
               />
-              <button
-                type="submit"
-                className="gold-gradient px-4 py-2.5 text-sm font-semibold text-primary-foreground rounded-sm transition-all duration-300 gold-glow-hover"
-              >
+              <button type="submit" className="gold-gradient px-4 py-2.5 text-sm font-semibold text-primary-foreground rounded-sm transition-all duration-300 gold-glow-hover">
                 Subscribe
               </button>
             </form>
           </div>
         </div>
-
-        {/* Bottom bar */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">© 2026 Kamolon. All rights reserved.</p>
           <div className="flex items-center gap-6">
@@ -82,5 +71,4 @@ const Footer = () => {
   );
 };
 
-import { useState } from "react";
 export default Footer;
