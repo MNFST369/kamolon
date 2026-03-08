@@ -15,8 +15,8 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="md:col-span-1">
-            <h3 className="text-2xl font-bold tracking-wider mb-4">
-              <span className="gold-gradient-text">KAMOLON</span>
+            <h3 className="text-2xl font-display font-bold tracking-[0.15em] mb-4">
+              <span className="gold-gradient-text-animated">KAMOLON</span>
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Premium shuttle services in Panama City Beach, FL. Where luxury meets reliability.
