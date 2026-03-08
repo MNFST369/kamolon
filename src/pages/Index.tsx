@@ -59,7 +59,7 @@ const Index = () => {
             <p className="text-primary text-xs font-body font-semibold uppercase tracking-[0.3em] mb-4">About Us</p>
             <h2 className="text-4xl md:text-5xl font-display mb-6">4+ Years of Excellence</h2>
             <p className="text-muted-foreground leading-relaxed font-body">
-              Proudly serving Northwest Florida Beaches International Airport (ECP) and the greater Panama City Beach and Walton County area.
+              Proudly serving an 80-mile radius around Northwest Florida Beaches International Airport (ECP)—including Panama City Beach, 30A, Alys Beach, Rosemary Beach, Seaside, Destin, Panama City, and beyond.
               We've built our reputation on personalized service, not volume.
             </p>
           </div>
