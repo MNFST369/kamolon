@@ -49,12 +49,6 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
-            <Link
-              to="/services"
-              className="gold-gradient-animated px-6 py-2.5 text-sm font-body font-semibold tracking-wide text-primary-foreground rounded-sm transition-all duration-300 gold-glow-hover hover:scale-105"
-            >
-              BOOK NOW
-            </Link>
           </div>
 
           {/* Mobile toggle */}
