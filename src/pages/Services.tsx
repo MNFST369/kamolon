@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import logoSilver from "@/assets/logo-silver.jpeg";
 
 // Simulated unavailable dates (March 10-15, 2026)
 const unavailableDates = ["2026-03-10", "2026-03-11", "2026-03-12", "2026-03-13", "2026-03-14", "2026-03-15"];
@@ -52,6 +53,7 @@ const Services = () => {
       {/* Hero */}
       <section className="pt-32 pb-16 section-gradient">
         <div className="container mx-auto px-4 text-center">
+          <img src={logoSilver} alt="Kamolon Logo" className="w-32 md:w-40 mx-auto mb-6 rounded-lg" />
           <p className="text-primary text-sm font-semibold uppercase tracking-[0.2em] mb-3">Our Services</p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Services & Booking</h1>
           <p className="text-muted-foreground max-w-xl mx-auto">

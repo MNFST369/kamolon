@@ -5,6 +5,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import heroBg from "@/assets/hero-bg.jpg";
 import serviceAirport from "@/assets/service-airport.jpg";
 import servicePrivate from "@/assets/service-private.jpg";
+import logoGold from "@/assets/logo-gold.jpeg";
 
 const Index = () => {
   useScrollAnimation();
@@ -20,6 +21,7 @@ const Index = () => {
         <div className="absolute inset-0 hero-overlay" />
         <div className="relative z-10 container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
+            <img src={logoGold} alt="Kamolon Logo" className="w-48 md:w-64 mx-auto mb-8 rounded-lg" />
             <p className="text-primary text-xs font-body font-semibold uppercase tracking-[0.4em] mb-8">
               Panama City Beach · 30A · Alys Beach · Panama City & Beyond
             </p>
