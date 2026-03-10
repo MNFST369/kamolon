@@ -5,22 +5,6 @@ import logoSilver from "@/assets/logo-silver.jpeg";
 const Services = () => {
   useScrollAnimation();
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // NOTE: Real booking requires backend integration to check/update availability
-    alert("Booking submitted! We will confirm your reservation shortly. (Frontend simulation—backend integration needed for real availability.)");
-  };
-
-  const isDateUnavailable = (date: string) => unavailableDates.includes(date);
-  const isTimeUnavailable = (time: string) => unavailableTimes.includes(time);
-
-  const inputClass = "w-full bg-muted border border-border rounded-sm px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary transition-colors";
-  const labelClass = "block text-sm font-medium text-muted-foreground mb-2 uppercase tracking-wide";
-
   return (
     <Layout>
       {/* Hero */}
