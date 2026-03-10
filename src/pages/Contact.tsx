@@ -35,8 +35,8 @@ const Contact = () => {
               <h2 className="text-2xl font-bold mb-8">Get in Touch</h2>
               <div className="space-y-6 mb-10">
                 {[
-                  { icon: Mail, label: "Email", value: "info@kamolon.com", href: "mailto:info@kamolon.com" },
-                  { icon: Phone, label: "Phone", value: "850-123-4567", href: "tel:8501234567" },
+                  { icon: Mail, label: "Email", value: "booking@kamolon.com", href: "mailto:booking@kamolon.com" },
+                  { icon: Phone, label: "Phone", value: "+1 (850) 964-0055", href: "tel:+18509640055" },
                   { icon: MapPin, label: "Location", value: "Panama City Beach, FL", href: "#" },
                 ].map((item, i) => (
                   <a key={i} href={item.href} className="flex items-center gap-4 group">

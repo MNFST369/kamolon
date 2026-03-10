@@ -79,12 +79,6 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
-            <Link
-              to="/services"
-              className="gold-gradient px-6 py-3 text-sm font-semibold tracking-wide text-primary-foreground rounded-sm text-center mt-2"
-            >
-              BOOK NOW
-            </Link>
           </div>
         </div>
       </div>
