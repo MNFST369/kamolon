@@ -1,36 +1,9 @@
-import { useState } from "react";
 import Layout from "@/components/Layout";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import logoSilver from "@/assets/logo-silver.jpeg";
 
-// Simulated unavailable dates (March 10-15, 2026)
-const unavailableDates = ["2026-03-10", "2026-03-11", "2026-03-12", "2026-03-13", "2026-03-14", "2026-03-15"];
-
-const timeSlots = Array.from({ length: 33 }, (_, i) => {
-  const hour = Math.floor(i / 2) + 6;
-  const min = i % 2 === 0 ? "00" : "30";
-  return `${hour.toString().padStart(2, "0")}:${min}`;
-}).filter((t) => {
-  const h = parseInt(t.split(":")[0]);
-  return h < 22 || (h === 22 && t.endsWith("00"));
-});
-
-// Block 9-11 AM slots
-const unavailableTimes = ["09:00", "09:30", "10:00", "10:30"];
-
 const Services = () => {
   useScrollAnimation();
-  const [form, setForm] = useState({
-    pickup: "",
-    dropoff: "",
-    passengers: "1",
-    vehicle: "suv",
-    date: "",
-    time: "",
-    name: "",
-    email: "",
-    phone: "",
-  });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
