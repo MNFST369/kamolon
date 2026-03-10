@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
 import Layout from "@/components/Layout";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import logoSilver from "@/assets/logo-silver.jpeg";
 
 const Contact = () => {
   useScrollAnimation();
