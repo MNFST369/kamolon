@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 
 const navItems = [
   { label: "Main", path: "/" },
-  { label: "Services & Booking", path: "/services" },
+  { label: "Services", path: "/services" },
   { label: "Contact", path: "/contact" },
   { label: "FAQ", path: "/faq" },
 ];
@@ -49,12 +49,6 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
-            <Link
-              to="/services"
-              className="gold-gradient-animated px-6 py-2.5 text-sm font-body font-semibold tracking-wide text-primary-foreground rounded-sm transition-all duration-300 gold-glow-hover hover:scale-105"
-            >
-              BOOK NOW
-            </Link>
           </div>
 
           {/* Mobile toggle */}
@@ -85,12 +79,6 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
-            <Link
-              to="/services"
-              className="gold-gradient px-6 py-3 text-sm font-semibold tracking-wide text-primary-foreground rounded-sm text-center mt-2"
-            >
-              BOOK NOW
-            </Link>
           </div>
         </div>
       </div>
