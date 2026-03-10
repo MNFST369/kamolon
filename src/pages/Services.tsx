@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Layout from "@/components/Layout";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import logoSilver from "@/assets/logo-silver.jpeg";
 
 // Simulated unavailable dates (March 10-15, 2026)
 const unavailableDates = ["2026-03-10", "2026-03-11", "2026-03-12", "2026-03-13", "2026-03-14", "2026-03-15"];
