@@ -35,9 +35,9 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
               <Link
                 to="/services"
-                className="gold-gradient-animated px-12 py-4 text-sm font-body font-bold uppercase tracking-[0.2em] text-primary-foreground rounded-sm transition-all duration-300 gold-glow gold-glow-hover hover:scale-105"
+                className="border border-primary/30 px-12 py-4 text-sm font-body font-medium uppercase tracking-[0.2em] text-foreground rounded-sm transition-all duration-300 hover:border-primary hover:text-primary"
               >
-                Book Now
+                Our Services
               </Link>
               <Link
                 to="/contact"
