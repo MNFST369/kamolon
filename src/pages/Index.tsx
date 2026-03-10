@@ -5,6 +5,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import heroBg from "@/assets/hero-bg.jpg";
 import serviceAirport from "@/assets/service-airport.jpg";
 import servicePrivate from "@/assets/service-private.jpg";
+import logoGold from "@/assets/logo-gold.jpeg";
 
 const Index = () => {
   useScrollAnimation();
