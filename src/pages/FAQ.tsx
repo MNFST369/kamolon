@@ -41,8 +41,12 @@ const FAQ = () => {
 
   return (
     <Layout>
-      <section className="pt-32 pb-16 section-gradient">
-        <div className="container mx-auto px-4 text-center">
+      <section className="relative pt-32 pb-16 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={heroCar} alt="Kamolon Suburban SUV" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
+        </div>
+        <div className="relative container mx-auto px-4 text-center">
           <p className="text-primary text-sm font-semibold uppercase tracking-[0.2em] mb-3">Support</p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Frequently Asked Questions</h1>
           <p className="text-muted-foreground max-w-xl mx-auto">Everything you need to know about our premium shuttle service.</p>

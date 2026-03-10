@@ -53,6 +53,7 @@ const Services = () => {
       {/* Hero */}
       <section className="pt-32 pb-16 section-gradient">
         <div className="container mx-auto px-4 text-center">
+          <img src={logoSilver} alt="Kamolon Logo" className="w-32 md:w-40 mx-auto mb-6 rounded-lg" />
           <p className="text-primary text-sm font-semibold uppercase tracking-[0.2em] mb-3">Our Services</p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Services & Booking</h1>
           <p className="text-muted-foreground max-w-xl mx-auto">
