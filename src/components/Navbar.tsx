@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 
 const navItems = [
   { label: "Main", path: "/" },
@@ -11,8 +11,10 @@ const navItems = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [quoteOpen, setQuoteOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const quoteRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -22,7 +24,18 @@ const Navbar = () => {
 
   useEffect(() => {
     setIsOpen(false);
+    setQuoteOpen(false);
   }, [location]);
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (quoteRef.current && !quoteRef.current.contains(e.target as Node)) {
+        setQuoteOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <nav
@@ -49,6 +62,24 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
+            <div className="relative" ref={quoteRef}>
+              <button
+                onClick={() => setQuoteOpen(!quoteOpen)}
+                className="flex items-center gap-1 text-sm font-medium tracking-wide uppercase transition-colors duration-300 hover:text-primary text-primary"
+              >
+                Get a Quote <ChevronDown className={`w-4 h-4 transition-transform ${quoteOpen ? "rotate-180" : ""}`} />
+              </button>
+              {quoteOpen && (
+                <div className="absolute right-0 top-full mt-4 w-[420px] bg-card border border-border rounded-sm shadow-2xl overflow-hidden z-50">
+                  <iframe
+                    src="https://customer.moovs.app/kamolon/iframe"
+                    title="Moovs App"
+                    className="w-full border-0"
+                    style={{ height: "500px" }}
+                  />
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Mobile toggle */}
@@ -64,7 +95,7 @@ const Navbar = () => {
         {/* Mobile menu */}
         <div
           className={`md:hidden overflow-hidden transition-all duration-500 ${
-            isOpen ? "max-h-96 pb-6" : "max-h-0"
+            isOpen ? "max-h-[800px] pb-6" : "max-h-0"
           }`}
         >
           <div className="flex flex-col gap-4 pt-4 border-t border-border">
@@ -79,6 +110,22 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
+            <button
+              onClick={() => setQuoteOpen(!quoteOpen)}
+              className="flex items-center gap-1 text-sm font-medium tracking-wide uppercase text-primary text-left"
+            >
+              Get a Quote <ChevronDown className={`w-4 h-4 transition-transform ${quoteOpen ? "rotate-180" : ""}`} />
+            </button>
+            {quoteOpen && (
+              <div className="border border-border rounded-sm overflow-hidden">
+                <iframe
+                  src="https://customer.moovs.app/kamolon/iframe"
+                  title="Moovs App"
+                  className="w-full border-0"
+                  style={{ height: "450px" }}
+                />
+              </div>
+            )}
           </div>
         </div>
       </div>

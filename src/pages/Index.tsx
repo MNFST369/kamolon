@@ -119,19 +119,24 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-28 md:py-36 section-gradient">
-        <div className="fade-in-up container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-display mb-6">Ready to Ride in Style?</h2>
-          <p className="text-muted-foreground mb-12 max-w-lg mx-auto font-body">
-            Experience the Kamolon difference—premium transfers tailored to your comfort.
-          </p>
-          <Link
-            to="/contact"
-            className="inline-block border border-primary/30 px-14 py-4 text-sm font-body font-medium uppercase tracking-[0.2em] text-foreground rounded-sm transition-all duration-300 hover:border-primary hover:text-primary"
-          >
-            Get in Touch
-          </Link>
+      {/* Get a Quote */}
+      <section id="get-a-quote" className="py-28 md:py-36 section-gradient">
+        <div className="fade-in-up container mx-auto px-4">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <p className="text-primary text-xs font-body font-semibold uppercase tracking-[0.3em] mb-4">Book Your Ride</p>
+            <h2 className="text-4xl md:text-5xl font-display mb-6">Get a Quote</h2>
+            <p className="text-muted-foreground font-body">
+              Experience the Kamolon difference—get an instant quote for your premium transfer.
+            </p>
+          </div>
+          <div className="max-w-4xl mx-auto rounded-sm overflow-hidden border border-border">
+            <iframe
+              src="https://customer.moovs.app/kamolon/iframe"
+              title="Moovs App"
+              className="w-full border-0"
+              style={{ minHeight: "600px" }}
+            />
+          </div>
         </div>
       </section>
     </Layout>
