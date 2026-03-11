@@ -60,7 +60,7 @@ const Services = () => {
         <div className="container mx-auto px-4 md:px-8">
           <div className="fade-in-up text-center mb-10">
             <p className="text-primary text-sm font-semibold uppercase tracking-[0.2em] mb-3">Service Area</p>
-            <h2 className="text-3xl font-bold">Service Area</h2>
+            
             <p className="text-muted-foreground text-sm mt-2">Panama City Beach · 30A · Alys Beach · Rosemary Beach · Seaside · Destin · Panama City & more</p>
           </div>
           <div className="fade-in-up max-w-4xl mx-auto rounded-lg overflow-hidden border border-border">
