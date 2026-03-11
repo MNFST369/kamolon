@@ -16,8 +16,8 @@ const Index = () => {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroBg})` }}
-        />
+          style={{ backgroundImage: `url(${heroBg})` }} />
+        
         <div className="absolute inset-0 hero-overlay" />
         <div className="relative z-10 container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
@@ -35,14 +35,14 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
               <Link
                 to="/services"
-                className="border border-primary/30 px-12 py-4 text-sm font-body font-medium uppercase tracking-[0.2em] text-foreground rounded-sm transition-all duration-300 hover:border-primary hover:text-primary"
-              >
+                className="border border-primary/30 px-12 py-4 text-sm font-body font-medium uppercase tracking-[0.2em] text-foreground rounded-sm transition-all duration-300 hover:border-primary hover:text-primary">
+                
                 Our Services
               </Link>
               <Link
                 to="/contact"
-                className="border border-primary/30 px-12 py-4 text-sm font-body font-medium uppercase tracking-[0.2em] text-foreground rounded-sm transition-all duration-300 hover:border-primary hover:text-primary"
-              >
+                className="border border-primary/30 px-12 py-4 text-sm font-body font-medium uppercase tracking-[0.2em] text-foreground rounded-sm transition-all duration-300 hover:border-primary hover:text-primary">
+                
                 Contact Us
               </Link>
             </div>
@@ -68,7 +68,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="fade-in-up card-gradient rounded-sm overflow-hidden border border-border group">
               <div className="aspect-video overflow-hidden">
-                <img src={servicePrivate} alt="Premium SUV private transfer service" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <img alt="Premium SUV private transfer service" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/lovable-uploads/e1394f09-5782-4ecc-a63c-981686de898c.jpg" />
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-display mb-3">Private Transfers</h3>
@@ -79,7 +79,7 @@ const Index = () => {
             </div>
             <div className="fade-in-up card-gradient rounded-sm overflow-hidden border border-border group">
               <div className="aspect-video overflow-hidden">
-                <img src={serviceAirport} alt="Airport shuttle minivan service" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <img alt="Airport shuttle minivan service" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="/lovable-uploads/ebb9d17a-6c06-4002-b8c0-4ea1c00079c4.jpg" />
               </div>
               <div className="p-8">
                 <h3 className="text-2xl font-display mb-3">Airport Shuttle</h3>
@@ -102,19 +102,19 @@ const Index = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {[
-              { icon: Users, title: "Meet & Greet", desc: "Personal welcome at arrivals with your name on display." },
-              { icon: Car, title: "Premium SUVs", desc: "Luxury SUVs and minivans, always immaculate." },
-              { icon: Shield, title: "Safety First", desc: "Vetted drivers, sanitized vehicles, real-time monitoring." },
-              { icon: Clock, title: "Always On Time", desc: "Flight tracking ensures we're there when you are." },
-            ].map((item, i) => (
-              <div key={i} className="fade-in-up card-gradient border border-border rounded-sm p-8 text-center transition-all duration-300 hover:border-primary/30">
+            { icon: Users, title: "Meet & Greet", desc: "Personal welcome at arrivals with your name on display." },
+            { icon: Car, title: "Premium SUVs", desc: "Luxury SUVs and minivans, always immaculate." },
+            { icon: Shield, title: "Safety First", desc: "Vetted drivers, sanitized vehicles, real-time monitoring." },
+            { icon: Clock, title: "Always On Time", desc: "Flight tracking ensures we're there when you are." }].
+            map((item, i) =>
+            <div key={i} className="fade-in-up card-gradient border border-border rounded-sm p-8 text-center transition-all duration-300 hover:border-primary/30">
                 <div className="w-12 h-12 mx-auto mb-6 rounded-full flex items-center justify-center bg-primary/10">
                   <item.icon className="w-5 h-5 text-primary" />
                 </div>
                 <h3 className="font-display text-lg mb-2">{item.title}</h3>
                 <p className="text-muted-foreground text-sm font-body">{item.desc}</p>
               </div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -134,13 +134,13 @@ const Index = () => {
               src="https://customer.moovs.app/kamolon/iframe"
               title="Moovs App"
               className="w-full border-0"
-              style={{ minHeight: "600px" }}
-            />
+              style={{ minHeight: "600px" }} />
+            
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>);
+
 };
 
 export default Index;
